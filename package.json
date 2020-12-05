@@ -1,0 +1,27 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "1.0.0",
+  "description": "see https://adventofcode.com/2020/",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@jest/globals": "^26.6.2",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timvanschie1/advent-of-code-2020.git"
+  },
+  "author": "Tim van Schie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timvanschie1/advent-of-code-2020/issues"
+  },
+  "homepage": "https://github.com/timvanschie1/advent-of-code-2020#readme"
+}
