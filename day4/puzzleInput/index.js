@@ -1,4 +1,4 @@
-const puzzleInput = [
+const index = [
     {
         "byr": "1971",
         "ecl": "hzl",
@@ -2116,4 +2116,4 @@ const puzzleInput = [
     }
 ];
 
-module.exports = puzzleInput;
+module.exports = index;

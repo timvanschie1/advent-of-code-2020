@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.readFile('puzzleInput.txt', 'utf8', (err, data) => {
+fs.readFile('originalPuzzleInput.txt', 'utf8', (err, data) => {
     if (err) throw err;
     data = data.split(" ").join("\n");
     data = data.split(":").join('":"');
@@ -9,5 +9,5 @@ fs.readFile('puzzleInput.txt', 'utf8', (err, data) => {
     data = data.split('"},{",').join("},{");
     data = `const puzzleInput = [{"${data}}];\n\nmodule.exports = puzzleInput;`;
     data = data.split('"}]').join('}]');
-    fs.writeFile('puzzleInput.js', data, 'utf8', () => null);
+    fs.writeFile('index.js', data, 'utf8', () => null);
 });
