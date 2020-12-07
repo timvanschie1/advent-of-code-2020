@@ -1,4 +1,4 @@
-const testData = [
+const puzzleInput = [
     1977,
     1515,
     1857,
@@ -201,4 +201,4 @@ const testData = [
     1888
 ];
 
-module.exports = testData;
+module.exports = puzzleInput;

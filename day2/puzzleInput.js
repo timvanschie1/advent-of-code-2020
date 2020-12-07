@@ -1,4 +1,4 @@
-const testData = [
+const puzzleInput = [
     [6, 10, "p", "ctpppjmdpppppp"],
     [17, 19, "l", "llllllllllllllllllll"],
     [14, 19, "z", "zrzzzzzztzzzzwzzzzk"],
@@ -1001,4 +1001,4 @@ const testData = [
     [8, 11, "t", "tttttttcttm"],
 ];
 
-module.exports = testData;
+module.exports = puzzleInput;
