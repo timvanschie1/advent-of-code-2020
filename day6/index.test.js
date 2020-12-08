@@ -10,4 +10,4 @@ const testData = [
 ];
 
 test('day 6, part 1', () => expect(part1(testData)).toBe(11));
-// test('day [], part 2', () => expect(part2(testData)).toBe(null));
+test('day 6, part 2', () => expect(part2(testData)).toBe(6));
