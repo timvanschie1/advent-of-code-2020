@@ -591,4 +591,4 @@ striped aqua bags contain 1 plaid blue bag, 1 dark plum bag, 4 faded lavender ba
 dotted plum bags contain 5 mirrored green bags, 1 dark plum bag, 4 dark maroon bags.
 faded gold bags contain 4 pale yellow bags.
 vibrant beige bags contain 2 light lavender bags, 3 faded indigo bags.
-light brown bags contain 3 drab brown bags, 4 dark violet bags, 3 faded indigo bags.
+light brown bags contain no other bags.

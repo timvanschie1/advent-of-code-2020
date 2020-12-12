@@ -1,20 +1,17 @@
 function part1(data) {
-    const dataStrippedFromAmounts = data.map(bag => {
-        bag.holds = bag.holds.map(color => color.replace(/[0-9] /g, ""));
-        return bag;
-    });
-    
-    const outerBagsWithShinyGoldBag = dataStrippedFromAmounts.reduce((accumulator, bag) => {
+    const getColor = colorWithAmount => colorWithAmount.replace(/[0-9] /g, "");
+
+    const outerBagsWithShinyGoldBag = data.reduce((accumulator, bag) => {
         function recurse(holdingBagColor) {
             accumulator.push(holdingBagColor);
 
-            const holdingBags = data.filter(holdingBag => holdingBag.holds.includes(holdingBagColor));
+            const holdingBags = data.filter(bag => bag.holds.some(item => getColor(item) === holdingBagColor));
             if (holdingBags.length) {
                 holdingBags.forEach(holdingBag => recurse(holdingBag.color))
             }
         }
 
-        if (bag.holds.includes("shiny gold")) {
+        if (bag.holds.some(item => getColor(item) === "shiny gold")) {
             recurse(bag.color);
         }
 
