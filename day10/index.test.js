@@ -36,4 +36,4 @@ const testData = [
 ];
 
 test('day 10, part 1', () => expect(part1(testData)).toBe(220));
-// test('day 10, part 2', () => expect(part2(testData)).toBe(null));
+test('day 10, part 2', () => expect(part2(testData)).toBe(19208));

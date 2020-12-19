@@ -1,5 +1,6 @@
 function part1(data) {
     const sortedData = data.sort((a, b) => a - b);
+
     const differences = sortedData.reduce((accumulator, adapter, i) => {
         const difference = adapter - (i === 0 ? 0 : sortedData[i - 1]);
         accumulator[difference] = accumulator[difference] + 1
